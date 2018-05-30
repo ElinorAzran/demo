@@ -51,22 +51,22 @@
 
 
             <form action="/login.php" method="post">
-              <h1>Dean did you see the changes??</h1>
+              <h1> הזנק לעתיד </h1>
               <div>
-                <input type="text" class="form-control" name="name" placeholder="Username" required="" />
+                <input type="text" class="form-control" name="name" placeholder="ת.ז" required="" />
               </div>
               <div>
-                <input type="password" class="form-control" name="password" placeholder="Password" required="" />
+                <input type="password" class="form-control" name="password" placeholder="סיסמה" required="" />
               </div>
               <div>
-                <button class="btn btn-default submit">Log in</button>
+                <button class="btn btn-default submit">התחבר</button>
                 <!-- <a class="reset_pass" href="#">Lost your password?</a> -->
               </div>
               <div class="clearfix"></div>
 
               <div class="separator">
-                <p class="change_link">New User?
-                  <a href="#signup" class="to_register"> Create Account </a>
+                <p class="change_link">משתמש חדש?
+                  <a href="#signup" class="to_register">צור חשבון</a>
                 </p>
 
                 <div class="clearfix"></div>
@@ -96,31 +96,31 @@
                 
             } ?>
             <form action="/register.php" method="post">
-              <h1>Create Account</h1>
+              <h1>צור חשבון</h1>
               <div>
-                <input type="text" name="username" class="form-control" placeholder="Username" required="" />
+                <input type="text" name="username" class="form-control" placeholder="ת.ז" required="" />
               </div>
               <div>
-                <input type="text" name="first_name" class="form-control" placeholder="First name" required="" />
+                <input type="text" name="first_name" class="form-control" placeholder="שם פרטי" required="" />
               </div>
               <div>
-                <input type="text" name="last_name" class="form-control" placeholder="Last name" required="" />
+                <input type="text" name="last_name" class="form-control" placeholder="שם משפחה" required="" />
               </div>
               <div>
-                <input type="password" name="password" class="form-control" placeholder="Password" required="" />
+                <input type="password" name="password" class="form-control" placeholder="סיסמה" required="" />
               </div>
               <div>
-                <input type="password" name="password_confirm" class="form-control" placeholder="Password confirmation" required="" />
+                <input type="password" name="password_confirm" class="form-control" placeholder="אימות סיסמה" required="" />
               </div>
               <div>
-                <button class="btn btn-default submit">Submit</button>
+                <button class="btn btn-default submit">אישור</button>
               </div>
 
               <div class="clearfix"></div>
 
               <div class="separator">
-                <p class="change_link">Already a member ?
-                  <a href="#signin" class="to_register"> Log in </a>
+                <p class="change_link">יש לך כבר חשבון?
+                  <a href="#signin" class="to_register">התחבר</a>
                 </p>
 
                 <div class="clearfix"></div>
