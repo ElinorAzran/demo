@@ -11,13 +11,13 @@
     <title>Login</title>
 
     <!-- Bootstrap -->
-    <link href="/bower_components/gentelella/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bower_components/gentelella/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
-    <link href="/bower_components/gentelella/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../bower_components/gentelella/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- NProgress -->
-    <link href="/bower_components/gentelella/vendors/nprogress/nprogress.css" rel="stylesheet">
+    <link href="../bower_components/gentelella/vendors/nprogress/nprogress.css" rel="stylesheet">
     <!-- Animate.css -->
-    <link href="/bower_components/gentelella/vendors/animate.css/animate.min.css" rel="stylesheet">
+    <link href="../bower_components/gentelella/vendors/animate.css/animate.min.css" rel="sty lesheet">
 
     <!-- Custom Theme Style -->
     <link href="/bower_components/gentelella/build/css/custom.min.css" rel="stylesheet">
@@ -134,7 +134,8 @@
       </div>
     </div>
 
-    <?php unset($_SESSION['message']); ?>
+      <!--This is a comment. Comments are not displayed in the browser-->
+<!--  <?php unset($_SESSION['message']); ?>>-->
 
     <script src="/bower_components/gentelella/vendors/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="/js/main.js"></script>
