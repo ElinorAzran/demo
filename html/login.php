@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- test -->
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -49,17 +50,18 @@
             <?php
             } ?>
 
-
-            <form action="/login.php" method="post">
+            <form action="/login.php" method="post" onsubmit="return checkNumField()">
               <h1> הזנק לעתיד </h1>
               <div>
-                <input type="text" class="form-control" name="name" placeholder="ת.ז" required="" />
+                <input type="text" style="text-align:right;" class="form-control" name="name" placeholder="ת.ז" pattern="[0-9]" title="נא להכניס רק ספרות" required/>
+                  <span id="message"> </span>
               </div>
               <div>
-                <input type="password" class="form-control" name="password" placeholder="סיסמה" required="" />
+                <input type="password" style="text-align:right;" class="form-control" name="password" placeholder="סיסמה" required />
               </div>
               <div>
-                <button class="btn btn-default submit">התחבר</button>
+                  <!--<input type="submit" value="התחבר" class="btn btn-default submit" >  -->
+                <button class="btn btn-default submit">התחבר</button> 
                 <!-- <a class="reset_pass" href="#">Lost your password?</a> -->
               </div>
               <div class="clearfix"></div>
@@ -98,19 +100,19 @@
             <form action="/register.php" method="post">
               <h1>צור חשבון</h1>
               <div>
-                <input type="text" name="username" class="form-control" placeholder="ת.ז" required="" />
+                <input type="text" style="text-align:right;" name="username" class="form-control" placeholder="ת.ז" pattern="[0-9]" title="נא להכניס רק ספרות" required="" />
               </div>
               <div>
-                <input type="text" name="first_name" class="form-control" placeholder="שם פרטי" required="" />
+                <input type="text" style="text-align:right;" name="first_name" class="form-control" placeholder="שם פרטי" required="" />
               </div>
               <div>
-                <input type="text" name="last_name" class="form-control" placeholder="שם משפחה" required="" />
+                <input type="text" style="text-align:right;" name="last_name" class="form-control" placeholder="שם משפחה" required="" />
               </div>
               <div>
-                <input type="password" name="password" class="form-control" placeholder="סיסמה" required="" />
+                <input type="password" style="text-align:right;" name="password" class="form-control" placeholder="סיסמה" required="" />
               </div>
               <div>
-                <input type="password" name="password_confirm" class="form-control" placeholder="אימות סיסמה" required="" />
+                <input type="password" style="text-align:right;" name="password_confirm" class="form-control" placeholder="אימות סיסמה" required="" />
               </div>
               <div>
                 <button class="btn btn-default submit">אישור</button>
