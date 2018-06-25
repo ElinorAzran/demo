@@ -67,7 +67,7 @@
               <div class="clearfix"></div>
 
               <div class="separator">
-                <p class="change_link">משתמשtghhg חדש?
+                <p class="change_link">משתמש חדש?
                   <a href="#signup" class="to_register">צור חשבון</a>
                 </p>
 
