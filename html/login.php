@@ -53,7 +53,7 @@
             <form action="/login.php" method="post" onsubmit="return checkNumField()">
               <h1> הזנק לעתיד </h1>
               <div>
-                <input type="text" style="text-align:right;" class="form-control" name="name" placeholder="ת.ז" pattern="[0-9]" title="נא להכניס רק ספרות" required/>
+                <input type="text" style="text-align:right;" class="form-control" name="name" placeholder="ת.ז" pattern="[0-9]+" title="נא להכניס רק ספרות" required/>
                   <span id="message"> </span>
               </div>
               <div>
@@ -100,7 +100,7 @@
             <form action="/register.php" method="post">
               <h1>צור חשבון</h1>
               <div>
-                <input type="text" style="text-align:right;" name="username" class="form-control" placeholder="ת.ז" pattern="[0-9]" title="נא להכניס רק ספרות" required="" />
+                <input type="text" style="text-align:right;" name="username" class="form-control" placeholder="ת.ז" pattern="[0-9]+" title="נא להכניס רק ספרות" required="" />
               </div>
               <div>
                 <input type="text" style="text-align:right;" name="first_name" class="form-control" placeholder="שם פרטי" required="" />
