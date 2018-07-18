@@ -7,7 +7,7 @@ require_once 'session.php';
 
 // If it's form send - try to register user
 if($_SERVER["REQUEST_METHOD"] == "POST") { 
-	$username = $_POST['username'];<! need to be an id instead of username>
+	$username = $_POST['username'];//need to be an id instead of username
 	$password = $_POST['password'];
 	$password_confirm = $_POST['password_confirm'];
 	$first_name = $_POST['first_name'];
@@ -29,7 +29,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
 	// if Username is not a Admin or email
 	if($username != 'Admin' && !filter_var($username, FILTER_VALIDATE_EMAIL)) {
-        add_msg('Username must be an email.');<!change to "must fill your id">
+        add_msg('Username must be an email.');//change to "must fill your id"
         header('Location: /login.php#signup');
         exit();
     }
@@ -40,7 +40,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // If user with such email exist
     if(count($rows) > 0) {
-    	add_msg('User with such id already exists. Try again.');<! i have change the msg to an id>
+    	add_msg('User with such id already exists. Try again.');// i have change the msg to an id
 		header('Location: /login.php#signup');
 		exit();
     }

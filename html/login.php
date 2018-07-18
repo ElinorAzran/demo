@@ -70,6 +70,10 @@
                 <p class="change_link">משתמש חדש?
                   <a href="#signup" class="to_register">צור חשבון</a>
                 </p>
+                <p class="change_link">שכחת סיסמא?
+                  <a href="#signup" class="to_register">שחזר סיסמא</a>
+                </p>  
+                  
 
                 <div class="clearfix"></div>
               </div>
