@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- test -->
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -8,16 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Login</title>
+    <title>מסך התחברות</title>
 
     <!-- Bootstrap -->
-    <link href="../bower_components/gentelella/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/bower_components/gentelella/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
-    <link href="../bower_components/gentelella/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/bower_components/gentelella/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- NProgress -->
-    <link href="../bower_components/gentelella/vendors/nprogress/nprogress.css" rel="stylesheet">
+    <link href="/bower_components/gentelella/vendors/nprogress/nprogress.css" rel="stylesheet">
     <!-- Animate.css -->
-    <link href="../bower_components/gentelella/vendors/animate.css/animate.min.css" rel="sty lesheet">
+    <link href="/bower_components/gentelella/vendors/animate.css/animate.min.css" rel="stylesheet">
 
     <!-- Custom Theme Style -->
     <link href="/bower_components/gentelella/build/css/custom.min.css" rel="stylesheet">
@@ -50,30 +49,28 @@
             <?php
             } ?>
 
-            <form action="/login.php" method="post" onsubmit="return checkNumField()">
-              <h1> הזנק לעתיד </h1>
+
+            <form action="/login.php" method="post">
+              <h1>התחברות למערכת</h1>
               <div>
-                <input type="text" style="text-align:right;" class="form-control" name="name" placeholder="ת.ז" pattern="[0-9]+" title="נא להכניס רק ספרות" required/>
-                  <span id="message"> </span>
+                <input type="text" maxlength="9" pattern="\d{9}" title="אנא הקלד 9 ספרות בדיוק " class="form-control" name="name" placeholder="תעודת זהות" required="" />
               </div>
               <div>
-                <input type="password" style="text-align:right;" class="form-control" name="password" placeholder="סיסמה" required />
+                <input type="password" class="form-control" name="password" placeholder="סיסמא" required="" />
               </div>
               <div>
-                  <!--<input type="submit" value="התחבר" class="btn btn-default submit" >  -->
-                <button class="btn btn-default submit">התחבר</button> 
+                <button class="btn btn-default submit">התחבר</button>
                 <!-- <a class="reset_pass" href="#">Lost your password?</a> -->
               </div>
               <div class="clearfix"></div>
 
               <div class="separator">
                 <p class="change_link">משתמש חדש?
-                  <a href="#signup" class="to_register">צור חשבון</a>
+                  <a href="#signup" class="to_register"> צור משתמש<br> </a>
                 </p>
-                <p class="change_link">שכחת סיסמא?
-                  <a href="#signup" class="to_register">שחזר סיסמא</a>
-                </p>  
-                  
+                 <p class="change_link">שכחת סיסמא?
+                  <a href="#signup" class="to_register">שחזור סיסמא<br> </a>
+                </p>
 
                 <div class="clearfix"></div>
               </div>
@@ -102,31 +99,31 @@
                 
             } ?>
             <form action="/register.php" method="post">
-              <h1>צור חשבון</h1>
+              <h1>Create Account</h1>
               <div>
-                <input type="text" style="text-align:right;" name="username" class="form-control" placeholder="ת.ז" pattern="[0-9]+" title="נא להכניס רק ספרות" required="" />
+                <input type="text" name="username" class="form-control" placeholder="Username" required="" />
               </div>
               <div>
-                <input type="text" style="text-align:right;" name="first_name" class="form-control" placeholder="שם פרטי" required="" />
+                <input type="text" name="first_name" class="form-control" placeholder="First name" required="" />
               </div>
               <div>
-                <input type="text" style="text-align:right;" name="last_name" class="form-control" placeholder="שם משפחה" required="" />
+                <input type="text" name="last_name" class="form-control" placeholder="Last name" required="" />
               </div>
               <div>
-                <input type="password" style="text-align:right;" name="password" class="form-control" placeholder="סיסמה" required="" />
+                <input type="password" name="password" class="form-control" placeholder="Password" required="" />
               </div>
               <div>
-                <input type="password" style="text-align:right;" name="password_confirm" class="form-control" placeholder="אימות סיסמה" required="" />
+                <input type="password" name="password_confirm" class="form-control" placeholder="Password confirmation" required="" />
               </div>
               <div>
-                <button class="btn btn-default submit">אישור</button>
+                <button class="btn btn-default submit">Submit</button>
               </div>
 
               <div class="clearfix"></div>
 
               <div class="separator">
-                <p class="change_link">יש לך כבר חשבון?
-                  <a href="#signin" class="to_register">התחבר</a>
+                <p class="change_link">Already a member ?
+                  <a href="#signin" class="to_register"> Log in </a>
                 </p>
 
                 <div class="clearfix"></div>
@@ -138,8 +135,7 @@
       </div>
     </div>
 
-      <!--This is a comment. Comments are not displayed in the browser-->
-<!--  <?php unset($_SESSION['message']); ?>>-->
+       <!-- ?php unset($_SESSION['message']); -->
 
     <script src="/bower_components/gentelella/vendors/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="/js/main.js"></script>

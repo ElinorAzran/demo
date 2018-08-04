@@ -29,8 +29,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
             add_msg('Your Login Name or Password is invalid. Try another one.');
             header('Location: /login.php');
       } 
-} else {
-    // if no - just display html to login.
-	?> <?php
-      require_once 'html/login.php';
-}
+//} else {
+//    // if no - just display html to login.
+//	
+//      require_once 'html/login.php';
+//}
