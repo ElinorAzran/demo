@@ -67,11 +67,11 @@ if(count($rows) > 0) {
                         <table class="table">
                             <thead>
                             <tr>
-                                <th>Name</th>
-                                <th>Description</th>
-                                <th>Date published</th>
-                                <th>Research start date</th>
-                                <th>Research end date</th>
+                                <th>שם המלגה</th>
+                                <th>תיאור</th>
+                                <th>תאריך סיום</th>
+                                <th>תאריך התחלה</th>
+                                <th>סטטוס</th>
                                 <th>Author name</th>
                                 <th>Recomandations</th>
                                 <th>Number or reads</th>

@@ -10,7 +10,7 @@ require_once 'functions.php';
 require_once 'connect.php';
 require_once 'session.php';
 
-// If it's posting a form try to login
+// If it's posting a form try to login0.
 if($_SERVER["REQUEST_METHOD"] == "POST") {
       $myusername = trim($_POST['name']);
       $mypassword = trim($_POST['password']);
@@ -29,8 +29,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
             add_msg('Your Login Name or Password is invalid. Try another one.');
             header('Location: /login.php');
       } 
-//} else {
-//    // if no - just display html to login.
-//	
-//      require_once 'html/login.php';
-//}
+} else {
+    // if no - just display html to login.
+	?> <?php
+      require_once 'html/login.php';
+}
